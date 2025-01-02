@@ -46,7 +46,7 @@ const disableBoxes = () => {
 const enableBoxes = () => {
     boxes.forEach((box) => {
         box.disabled = false;
-        box.innerText = ""; // Clear the text in each box
+        box.innerText = ""; 
     });
 };
 
@@ -64,7 +64,7 @@ const checkwinner = () => {
             return;
         }
     }
-    // Check for a draw
+
     if ([...boxes].every(box => box.innerText)) {
         msg.innerText = "It's a draw!";
         msgContainer.classList.remove("hide");
